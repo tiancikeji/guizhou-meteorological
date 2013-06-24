@@ -1,88 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
-
-	<style type="text/css">
-
-	::selection{ background-color: #E13300; color: white; }
-	::moz-selection{ background-color: #E13300; color: white; }
-	::webkit-selection{ background-color: #E13300; color: white; }
-
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
-
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
-
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
-
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
-
-	#body{
-		margin: 0 15px 0 15px;
-	}
-	
-	p.footer{
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
-	
-	#container{
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		-webkit-box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
+<title>贵州气象在线 - 手机版</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.2; minimum-scale=1.0; maximum-scale=2.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="贵州天气网 | 贵州天气预报 | 贵州天气实况 | 贵州预警" />
+<meta name="description" content="贵州气象在线是集贵州省天气预报，天气实况，气象预警预警，科普信息与一体的天气信息门户网站，旨在为人们提供最新最权威的气象信息。" />
+<link rel="Shortcut icon" href="resources/images/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="resources/styles/style.css" />
 </head>
 <body>
+<div class="nav">
+		<a class="active" href="alarm.html">预警信息</a><a href="forecast.html">天气预报</a><a href="weather.html">天气实况</a><a class="nborder" href="news">天气新闻</a>
+	</div><!-- nav -->
 
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+	<div class="title">气象预警信息</div>
+	<div class="content">
+		<table class="table-list">
+			<tbody>
+				<tr>
+					<td class="s-pic"><a href="alarm-details.html"><img class="a-pic" src="resources/images/alarm.png" alt="大风" /></a></td>
+					<td class="s-info">
+						<a href="alarm-details.html">贵州省气象台发布大风蓝色预警</a><br />状态：<strong class="red">预警中</strong><br /><span class="time">2013-06-23 22:53:05</span>
+					</td>
+				</tr>
+				<tr class="odd">
+					<td class="s-pic"><a href="alarm-details.html"><img class="a-pic" src="resources/images/alarm2.png" alt="暴雨" /></a></td>
+					<td class="s-info">
+						<a href="alarm-details.html">贵州省气象台发布暴雨黄色预警</a><br />状态：<strong class="red">预警中</strong><br /><span class="time">2013-06-23 22:53:05</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="s-pic"><a href="alarm-details.html"><img class="a-pic" src="resources/images/alarm3.png" alt="暴雨" /></a></td>
+					<td class="s-info">
+						<a href="alarm-details.html">贵州省气象台发布暴雨红色预警</a><br />状态：<strong class="red">预警中</strong><br /><span class="time">2013-06-23 22:53:05</span>
+					</td>
+				</tr>
+				<tr class="odd">
+					<td class="s-pic"><a href="alarm-details.html"><img class="a-pic" src="resources/images/alarm4.png" alt="高温" /></a></td>
+					<td class="s-info">
+						<a href="alarm-details.html">贵州省气象台发布高温黄色预警</a><br />状态：<strong class="red">预警中</strong><br /><span class="time">2013-06-23 22:53:05</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="s-pic"><a href="alarm-details.html"><img class="a-pic" src="resources/images/alarm.png" alt="大风" /></a></td>
+					<td class="s-info">
+						<a href="alarm-details.html">贵州省气象台发布大风蓝色预警</a><br />状态：<strong class="red">预警中</strong><br /><span class="time">2013-06-23 22:53:05</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div><!-- content -->
 
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
-
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
-	</div>
-
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
-</div>
+	<div class="footer">
+		贵州省气象局@版权所有 <a href="http://www.gzqx.gov.cn/">WWW.GZQX.GOV.CN</a><br />
+		贵州省气象信息中心技术支持<br />维护支持电话：0851－5202278<br />
+		单位地址：贵州省贵阳市新华路翠微巷9号<br />
+		黔ICP备字030025号
+	</div><!-- footer -->
 
 </body>
 </html>
