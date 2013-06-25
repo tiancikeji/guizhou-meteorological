@@ -21,6 +21,18 @@ class Forecast extends CI_Controller {
 	{
 		$this->load->view('forecast');
 	}
+
+
+	public function details()
+	{
+		$this->load->view('forecast-details');
+	}
+
+
+	public function living()
+	{
+		$this->load->view('forecast-living');
+	}
 }
 
 /* End of file welcome.php */

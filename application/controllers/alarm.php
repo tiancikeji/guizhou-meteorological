@@ -21,6 +21,11 @@ class Alarm extends CI_Controller {
 	{
     $this->load->view('alarm');
 	}
+
+	public function details()
+	{
+    $this->load->view('alarm-details');
+	}
 }
 
 /* End of file alarm.php */
