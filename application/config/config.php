@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://localhost/';
 
 /*
 |--------------------------------------------------------------------------
@@ -324,8 +324,7 @@ $config['compress_output'] = FALSE;
 |
 | Options are 'local' or 'gmt'.  This pref tells the system whether to use
 | your server's local time as the master 'now' reference, or convert it to
-| GMT.  See the 'date helper' page of the user guide for information
-| regarding date handling.
+| GMT.  See the 'date helper' page of the user guide for information | regarding date handling.
 |
 */
 $config['time_reference'] = 'local';
