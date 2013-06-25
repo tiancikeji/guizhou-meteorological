@@ -77,7 +77,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 	width: 100%;
 }
 .table-list tr td {
-	padding: 10px;
+	padding: 10px 0 10px 10px;
 	border-bottom: 1px solid #ccc;
 }
 .table-list tr.odd, .table-list2 tr.odd {
@@ -91,6 +91,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 	vertical-align: top;
 	line-height: 21px;
 }
+.table-list tr td.s-info {
+	padding-right: 10px;
+}
+
 .s-info strong, .s-info2 strong, .s-info3 strong {
 	font-weight: normal;
 }
@@ -179,6 +183,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .news-title {
 	padding-top: 10px;
+	text-align: justify;
 }
 .news-date {
 	text-align: right;
