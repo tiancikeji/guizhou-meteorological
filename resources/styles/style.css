@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+/*
+Author: jibin
+Author URI: http://www.houjibin.com/
+Author mail: gagucooper@gmail.com
+Version: 1.0
+Last Updated: 2013-06-23
+*/
+
+body { -webkit-text-size-adjust: none; color: #333; }
+body, div, p, h1, h2, h3, em, span, a, td, form, input, select, textarea { margin: 0; padding: 0; font-size: 14px; line-height: 19px; font-style: normal; }
+h2, h3, em, strong { font-weight: bold; }
+img, input, select, textarea { vertical-align:middle; }
+img, a img { border: none; }
+a { color: #165BB3; text-decoration: none; }
+hr { margin: 10px 0; height: 0px; border: none; border-top: 1px #999 solid; color: #999; }
+table { border-collapse: collapse; border-spacing: 0; }
+.btn { background: #f37703; border: #e45d01 1px solid; }
+.btn-blue { background: #158fee; border: #0181e4 1px solid; }
+.oran { color: #f50; }
+.red, .err { color: #f00; }
+.green { color: #09BA2E; }
+.center { text-align: center; }
+.box, .mt { margin-top: 10px; }
+.ar { text-align: right; }
+
+/* common */
+
+.nav {
+	background: #1C5089;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	text-align: center;
+}
+.nav a {
+	color: #fff;
+	display: inline-block;
+	background: #1C5089;
+	padding: 10px 1.3%;
+	line-height: 23px;
+	border-right: 1px solid #fff;
+}
+.nav a:visited {
+	color: #fff;
+}
+.nav a.nborder {
+	border-right: 0 none;
+}
+.nav a.active {
+	background: #F2F2F2;
+	color: #333;
+}
+
+.search {
+	padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+.s-hot { 
+	width: 74%; 
+	height: 20px;
+	padding: 2px 3px;
+}
+/* header */
+
+.title { 
+	background: #1C5089;
+	height: 32px;
+    line-height: 32px;
+    padding-left: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.table-list, .table-list2, .table-details {
+	width: 100%;
+}
+.table-list tr td {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.table-list tr.odd, .table-list2 tr.odd {
+	background: #E4E4E4;
+}
+.s-pic {
+    vertical-align: top;
+    width: 100px;
+}
+.s-info {
+	vertical-align: top;
+	line-height: 21px;
+}
+.s-info strong, .s-info2 strong, .s-info3 strong {
+	font-weight: normal;
+}
+.a-pic {
+    width: 100px;
+    height: 80px;
+}
+.time {
+	color: #999;
+}
+
+.forecast-time {
+	padding: 10px 0 0 10px;
+}
+.table-list2 .table-list tr td {
+	padding: 0 0 10px 10px;
+}
+.table-list tr td.s-info2 {
+	vertical-align: top;
+	padding-top: 10px;
+	line-height: 25px;
+}
+.s-pic2 {
+    vertical-align: top;
+    width: 86px;
+}
+.a-pic2 {
+	width: 86px;
+    height: 86px;
+    margin-top: 5px;
+}
+.s-pic3 {
+    vertical-align: top;
+    width: 92px;
+}
+.a-pic3 {
+	width: 92px;
+    height: 85px;
+}
+.table-list tr td.s-info3 {
+	vertical-align: top;
+	padding-top: 12px;
+	line-height: 21px;
+}
+
+.alist {
+	padding: 10px 0 10px 20px;
+	line-height: 26px;
+}
+/* list */
+
+.mod {
+	border-top: 1px solid #ccc;
+	background: #E4E4E4; 
+}
+.title2 {
+	color: #0099FF;
+	padding: 10px;
+}
+.cont {
+	padding: 0 	0 10px 20px;
+}
+.link-city a {
+	padding-right: 14px;
+}
+/* mod */
+
+.table-details tr th {
+	color: #3366BB;
+	font-weight: normal;
+	text-align: left;
+	padding: 10px 0 10px 10px;
+	vertical-align: top;
+}
+.table-details tr td {
+	text-align: left;
+	padding: 10px 10px 10px 0;
+}
+.alarm-details .s-pic {
+	padding-right: 10px;
+}
+
+.forecast-details .table-list tr td {
+	border-bottom: 0 none;
+}
+
+.news-title {
+	padding-top: 10px;
+}
+.news-date {
+	text-align: right;
+	padding-top: 10px;
+}
+.news-details-title, .news-author {
+	text-align: center;
+}
+.news-details-title {
+	font-size: 18px;
+	padding-top: 20px;
+	padding:  20px 0 10px;
+}
+.news-author {
+	color: #ccc;
+}
+.news-author span {
+	padding: 0 10px;
+}
+.news-wrap {
+	padding: 10px;
+}
+.news-pic {
+	text-align: center;
+	margin: 10px 0 20px;
+}
+.news-pic img {
+	width: 100%;
+}
+.news-wrap p {
+	line-height: 1.5em;
+    text-align: justify;
+    text-indent: 2em;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+.news-wrap .forecat-author {
+	text-align: right;
+	padding-top: 10px;
+}
+/* details */
+
+.footer {
+	background: #1C5089;
+	text-align: center; 
+	color: #fff;
+	padding: 10px 0;
+	line-height: 23px;
+}
+.footer a, .footer a:visited {
+	color: #fff;
+}
+/* footer */
