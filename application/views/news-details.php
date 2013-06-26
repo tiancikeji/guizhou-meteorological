@@ -1,26 +1,10 @@
-<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>气象预警信息 - 手机贵州气象在线</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
-<meta name="format-detection" content="telephone=no" />
-<meta name="keywords" content="贵州天气网 | 贵州天气预报 | 贵州天气实况 | 贵州预警" />
-<meta name="description" content="贵州气象在线是集贵州省天气预报，天气实况，气象预警预警，科普信息与一体的天气信息门户网站，旨在为人们提供最新最权威的气象信息。" />
-<link rel="Shortcut icon" href="resources/images/favicon.ico" />
-<link type="text/css" rel="stylesheet" href="resources/styles/style.css" />
-</head>
-<body>
 
-	<div class="nav">
-		<a href="alarm.html">预警信息</a><a href="forecast.html">天气预报</a><a href="weather.html">天气实况</a><a class="active nborder" href="news.html">天气新闻</a>
-	</div><!-- nav -->
-
+  <?php $this->load->view('_header');?>  
 	<div class="news-details">
 		<div class="news-details-title">贵阳副市长要求做好汛期灾害防范应对工作</div>
 		<div class="news-author"><span>时间：2013-06-06 14:27:13</span><span>作者：宣传与科普中心</span></div>
 		<div class="news-wrap">
-			<div class="news-pic"><img src="resources/images/news-pic.jpg" alt="新闻图片" /></div>
+			<div class="news-pic"><img src="/resources/images/news-pic.jpg" alt="新闻图片" /></div>
 			<p>6月6日上午，贵州省贵阳市副市长高卫东组织气象灾害应急联席会议成员单位、贵阳气象防灾减灾指挥部成员单位在市气象局部署工作，要求各单位和部门切实加强汛期灾害防范应对准备，减轻灾害损失，保护人民群众生命财产安全。</p>
 			<p>贵阳市气象局主要负责人首先通报今年入汛以来的天气过程、夏季天气趋势预测、近期重点关注进行强调和应采取相应的防范措施。期间，高卫东对气象部门提供的准确预报、精细化加密服务，为防汛抗洪救灾工作赢得主动权给予充分肯定。</p>
 			<p>贵阳市气象通报，4月1日到6月5日期间，贵阳市先后出现13次大范围降雨天气过程，其中4月到5月中旬的几次降雨过程雨中有夹降冰雹，5月较强的降水天气过程主要有3次，分别出现在5月24日、25日和29日。期间总降雨量大部分地区在200～400毫米之间，最大降水量出现在云岩区七冲站532.9毫米。预计 6月贵阳市共有3次较强降水天气过程，大致出现在：上旬中后期（中～大雨，局地暴雨）、下旬初（大～暴雨，局地大暴雨）和下旬末（中～大雨，局地暴雨）。根据最新气象资料分析，预计：6日白天到夜间，阴天有阵雨或雷雨，雨量一般中雨到大雨，局地暴雨；7日到8日白天，阴天间短时多云，有阵雨或雷雨，雨量一般小雨，局地中雨；8日傍晚到夜间，阴天有阵雨或雷雨，雨量一般中雨，局地暴雨；9日，阴天有小雨，气温明显下降；10日，雨止转多云天气，本轮降水结束。</p>
@@ -36,5 +20,4 @@
 		黔ICP备字030025号
 	</div><!-- footer -->
 
-</body>
-</html>
+  <?php $this->load->view('_footer');?>  

@@ -19,8 +19,14 @@ class News extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('news');
+    $this->load->model('News_Model');
+    $data['query'] = $this->News_Model->get_last_ten_entries();
+		$this->load->view('news',$data);
 	}
+  public function details()
+  {
+    $this->load->view('news-details');
+  }
 }
 
 /* End of file welcome.php */
