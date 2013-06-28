@@ -19,7 +19,10 @@ class Forecast extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('forecast');
+    $this->load->model("Forcast_Model");
+    $city = "贵阳";
+    $data['three_days'] = $this->Forcast_Model->get_three_days($city);
+		$this->load->view('forecast',$data);
 	}
 
 

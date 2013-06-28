@@ -6,23 +6,25 @@
 			<input type="submit" value="搜索" />
 		</form>
 	</div><!-- search -->
-
+<?php 
+    foreach($three_days as $value){
+    ?>
 	<div class="title">贵阳市 未来三天天气预报</div>
 	<div class="forecast-list">
 		<table class="table-list2">
 			<tbody>
 				<tr>
 					<td colspan="2">
-						<div class="forecast-time">2013.06.03</div>
+						<div class="forecast-time"><?php echo date('Y-m-d',$value->fcdate); ?></div>
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
 									<img class="a-pic2" src="resources/images/forecast.png" alt="晴" />
 								</td>
 								<td class="s-info2">
-									晴<br />
-									28℃ ~ 16℃<br />
-									北风转东北风小于3级
+									<?php echo $value->weather1; ?><br />
+									<?php echo $value->temp1; ?><br />
+									<?php echo $value->wind1; ?>
 								</td>
 							</tr>
 						</table>
@@ -30,16 +32,16 @@
 				</tr>
 				<tr class="odd">
 					<td colspan="2">
-						<div class="forecast-time">2013.06.04</div>
+						<div class="forecast-time"><?php echo date('Y-m-d',$value->fcdate); ?></div>
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
 									<img class="a-pic2" src="resources/images/forecast.png" alt="晴" />
 								</td>
 								<td class="s-info2">
-									晴<br />
-									28℃ ~ 16℃<br />
-									北风转东北风小于3级
+									<?php echo $value->weather2; ?><br />
+									<?php echo $value->temp2 ?><br />
+									<?php echo $value->wind2; ?>
 								</td>
 							</tr>
 						</table>
@@ -47,16 +49,16 @@
 				</tr>
 				<tr>
 					<td colspan="2">
-						<div class="forecast-time">2013.06.05</div>
+						<div class="forecast-time"><?php echo date('Y-m-d',$value->fcdate); ?></div>
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
 									<img class="a-pic2" src="resources/images/forecast.png" alt="晴" />
 								</td>
 								<td class="s-info2">
-									晴<br />
-									28℃ ~ 16℃<br />
-									北风转东北风小于3级
+									<?php echo $value->weather3; ?><br />
+									<?php echo $value->temp3 ?><br />
+									<?php echo $value->wind3; ?>
 								</td>
 							</tr>
 						</table>
@@ -66,6 +68,7 @@
 		</table>
 	</div><!-- list -->
 
+      <?php } ?>
 	<div class="title">贵阳 逐6小时精细化预报</div>
 	<div class="forecast-list">
 		<table class="table-list2">

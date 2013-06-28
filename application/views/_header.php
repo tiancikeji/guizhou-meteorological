@@ -13,9 +13,9 @@
 <body>
 
 	<div class="nav">
-    <a class="active" href="/alarm">预警信息</a>
-    <a href="/forecast">天气预报</a>
-    <a href="/weather">天气实况</a>
-    <a class="nborder" href="/news">天气新闻</a>
+    <a <?php if($this->uri->uri_string()==="alarm"){ echo "class='active'";} ;?> href="/alarm">预警信息</a>
+    <a <?php if($this->uri->uri_string()==="forecast"){ echo "class='active'";} ;?>href="/forecast">天气预报</a>
+    <a <?php if($this->uri->uri_string()==="weather"){ echo "class='active'";} ;?>href="/weather">天气实况</a>
+    <a <?php if($this->uri->uri_string()==="news"){ echo "class='active'";} ;?>class="nborder" href="/news">天气新闻</a>
 	</div><!-- nav -->
 
