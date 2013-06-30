@@ -1,5 +1,5 @@
-
   <?php $this->load->view('_header');?>  
+  http://www.gzqx.gov.cn//templets/gzqx/js/provalarm2.js?areaid=10126
 	<div class="title">气象预警信息</div>
 	<div class="content">
 		<table class="table-list">
