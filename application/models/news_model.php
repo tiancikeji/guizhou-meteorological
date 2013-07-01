@@ -7,6 +7,11 @@ class News_Model extends CI_Model {
         return $query->result();
     }
 
+    function find_by_id($id)
+    {
+         
+    }
+
 }
 
 /* End of file news.php */
