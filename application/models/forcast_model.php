@@ -8,10 +8,16 @@ class Forcast_Model extends CI_Model {
         return $query->result();
     }
 
-    function get_six_hours($city)
+    function get_six_hours()
     {
-        $this->db->where('city', $city);
-        $query = $this->db->get('gzqx_six_forcast');
+        $query = $this->db->query('SELECT * FROM (
+          SELECT `a`.`value_621`,`b`.`phenomena`,`a`.`value_622`,`a`.`value_623`,`a`.`value_624`,`c`.`wind_direction`,
+          `a`.`value_625`,`d`.`wind_power`,`a`.`value_626` ,`a`.`period`,`a`.`file_name`,`a`.`publish_time` ,`a`.`time`
+          FROM `gzqx_six_forcast` `a`
+          LEFT JOIN `gzqx_six_forcast_rank_code` `b` ON `b`.`phenomena_id` = `a`.`value_621`
+          LEFT JOIN `gzqx_six_forcast_rank_code` `c` ON `c`.`wind_direction_id` = `a`.`value_624`
+          LEFT JOIN `gzqx_six_forcast_rank_code` `d` ON `d`.`wind_power_id` = `a`.`value_625`
+          ORDER BY  `a`.`id` DESC LIMIT 4) `b` ORDER BY `b`.`period` ASC ;');
         return $query->result();
     }
 

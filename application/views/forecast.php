@@ -73,74 +73,25 @@
 	<div class="forecast-list">
 		<table class="table-list2">
 			<tbody>
+     <?php foreach($six_hours as $value){ ?>
 				<tr>
 					<td colspan="2">
-						<div class="forecast-time">03日08:00~03日14:00</div>
+						<div class="forecast-time"><?php echo $value->time; ?>-<?php echo date('Y-m-d H:i:s', $value->publish_time); ?></div>
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
 									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
 								</td>
 								<td class="s-info2">
-									晴<br />
-									28℃ ~ 16℃<br />
-									北风转东北风小于3级
+								  <?php echo  $value->phenomena; ?><br />
+									<?php echo $value->value_623; ?>℃-<?php echo $value->value_622; ?>℃<br />
+									<?php echo $value->wind_direction.$value->wind_power; ?>级
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-				<tr class="odd">
-					<td colspan="2">
-						<div class="forecast-time">03日14:00~03日20:00</div>
-						<table class="table-list">
-							<tr>
-								<td class="s-pic2">
-									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
-								</td>
-								<td class="s-info2">
-									晴<br />
-									28℃ ~ 16℃<br />
-									北风转东北风小于3级
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						<div class="forecast-time">03日20:00~04日02:00</div>
-						<table class="table-list">
-							<tr>
-								<td class="s-pic2">
-									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
-								</td>
-								<td class="s-info2">
-									晴<br />
-									28℃ ~ 16℃<br />
-									北风转东北风小于3级
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr class="odd">
-					<td colspan="2">
-						<div class="forecast-time">04日02:00~04日08:00</div>
-						<table class="table-list">
-							<tr>
-								<td class="s-pic2">
-									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
-								</td>
-								<td class="s-info2">
-									晴<br />
-									28℃ ~ 16℃<br />
-									北风转东北风小于3级
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
+      <?php } ?>
 			</tbody>
 		</table>
 	</div><!-- list -->

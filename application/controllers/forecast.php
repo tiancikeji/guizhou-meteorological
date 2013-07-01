@@ -22,6 +22,7 @@ class Forecast extends CI_Controller {
     $this->load->model("Forcast_Model");
     $city = "贵阳";
     $data['three_days'] = $this->Forcast_Model->get_three_days($city);
+    $data['six_hours'] = $this->Forcast_Model->get_six_hours();
 		$this->load->view('forecast',$data);
 	}
 
