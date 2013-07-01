@@ -19,7 +19,7 @@
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
-									<img class="a-pic2" src="resources/images/forecast.png" alt="晴" />
+									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
 								</td>
 								<td class="s-info2">
 									<?php echo $value->weather1; ?><br />
@@ -36,7 +36,7 @@
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
-									<img class="a-pic2" src="resources/images/forecast.png" alt="晴" />
+									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
 								</td>
 								<td class="s-info2">
 									<?php echo $value->weather2; ?><br />
@@ -53,7 +53,7 @@
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
-									<img class="a-pic2" src="resources/images/forecast.png" alt="晴" />
+									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
 								</td>
 								<td class="s-info2">
 									<?php echo $value->weather3; ?><br />
@@ -79,7 +79,7 @@
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
-									<img class="a-pic2" src="resources/images/forecast.png" alt="晴" />
+									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
 								</td>
 								<td class="s-info2">
 									晴<br />
@@ -96,7 +96,7 @@
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
-									<img class="a-pic2" src="resources/images/forecast.png" alt="晴" />
+									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
 								</td>
 								<td class="s-info2">
 									晴<br />
@@ -113,7 +113,7 @@
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
-									<img class="a-pic2" src="resources/images/forecast.png" alt="晴" />
+									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
 								</td>
 								<td class="s-info2">
 									晴<br />
@@ -130,7 +130,7 @@
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
-									<img class="a-pic2" src="resources/images/forecast.png" alt="晴" />
+									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
 								</td>
 								<td class="s-info2">
 									晴<br />

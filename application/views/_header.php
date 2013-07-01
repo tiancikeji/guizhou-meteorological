@@ -9,6 +9,7 @@
 <meta name="description" content="贵州气象在线是集贵州省天气预报，天气实况，气象预警预警，科普信息与一体的天气信息门户网站，旨在为人们提供最新最权威的气象信息。" />
 <link rel="Shortcut icon" href="/resources/images/favicon.ico" />
 <link type="text/css" rel="stylesheet" href="/resources/styles/style.css" />
+<script type="text/javascript" charset="utf-8" src="/resources/scripts/jquery-1.10.1.min.js"></script>
 </head>
 <body>
 
