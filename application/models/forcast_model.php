@@ -15,5 +15,14 @@ class Forcast_Model extends CI_Model {
         return $query->result();
     }
 
+    function get_trend($title)
+    {
+      $this->db->where('title',$title);
+      $this->db->order_by("pubdate", "desc"); 
+      $this->db->limit(1);
+      $query = $this->db->get('gzqx_week_trend_forcast');
+      // echo $this->db->last_query();
+      return $query->result();
+    }
 }
 

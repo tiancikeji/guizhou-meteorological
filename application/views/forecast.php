@@ -147,9 +147,9 @@
 
 	<div class="title">天气趋势</div>
 	<div class="alist">
-		<a href="/forecast/details">1.全省24小时趋势预报</a><br />
-		<a href="/forecast/details">2.全省一周天气趋势预报</a><br />
-		<a href="/forecast/details">3.上下班预报</a><br />
+		<a href="/forecast/details?title=全省24小时趋势预报">1.全省24小时趋势预报</a><br />
+		<a href="/forecast/details?title=一周天气趋势">2.全省一周天气趋势预报</a><br />
+		<a href="/forecast/details?title=上下班及晚间预报">3.上下班预报</a><br />
 		<a href="/forecast/living">4.生活指数预报</a>
 	</div><!-- list -->
 

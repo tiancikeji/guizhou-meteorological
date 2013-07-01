@@ -28,7 +28,10 @@ class Forecast extends CI_Controller {
 
 	public function details()
 	{
-		$this->load->view('forecast-details');
+    $title = $this->input->get("title");// "上下班及晚间预报";
+    $this->load->model("Forcast_Model");
+    $data['trend'] = $this->Forcast_Model->get_trend($title);
+		$this->load->view('forecast-details',$data);
 	}
 
 
