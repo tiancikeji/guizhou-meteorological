@@ -5,7 +5,7 @@
 		<div class="news-author"><span>时间：<?php echo ($query[0]->title);?></span><span>作者：<?php echo ($query[0]->writer);?></span></div>
 		<div class="news-wrap">
 			<div class="news-pic"><img src="<?php echo ($query[0]->litpic);?>" alt="新闻图片" /></div>
-			<p></p>
+			<p><?php echo ($query[0]->description);?></p>
 		</div>
 	</div><!-- details -->
 
