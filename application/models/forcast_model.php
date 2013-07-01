@@ -30,5 +30,14 @@ class Forcast_Model extends CI_Model {
       // echo $this->db->last_query();
       return $query->result();
     }
+
+    function get_living($citycode)
+    {
+      
+      $sql = "SELECT `b`.`index_description`,`b`.`description`,`b`.`live_name` FROM `gzqx_index_live` `a` LEFT JOIN `gzqx_index_live_description` `b`  ON `a`.`ultraviolet_rays` =`b`.`value` WHERE `a`.`nations` = '".$citycode."'  ORDER BY `a`.`pubdate` DESC limit 1;
+";
+      $query = $this->db->query($sql);
+      return $query->result();
+    }
 }
 

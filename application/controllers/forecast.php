@@ -38,7 +38,10 @@ class Forecast extends CI_Controller {
 
 	public function living()
 	{
-		$this->load->view('forecast-living');
+    $citycode = '57816';
+    $this->load->model("Forcast_Model");
+    $data['living'] = $this->Forcast_Model->get_living($citycode);
+		$this->load->view('forecast-living',$data);
 	}
 }
 

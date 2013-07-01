@@ -4,42 +4,14 @@
 	<div class="living content">
 		<table class="table-list">
 			<tbody>
+  <?php foreach($living as $value){?>
 				<tr>
 					<td class="s-pic3"><img class="a-pic3" src="/resources/images/living.png" alt="紫外线" /></td>
 					<td class="s-info3">
-						紫外线强度：<strong class="green">中等</strong><br />建议：除戴防护帽和太阳镜外涂擦防晒霜
+					    <?php echo $value->live_name; ?>强度：<strong class="green"><?php echo $value->index_description; ?></strong><br />建议：<?php echo $value->description; ?>
 					</td>
 				</tr>
-				<tr class="odd">
-					<td class="s-pic3"><img class="a-pic3" src="/resources/images/living.png" alt="紫外线" /></td>
-					<td class="s-info3">
-						紫外线强度：<strong class="green">中等</strong><br />建议：除戴防护帽和太阳镜外涂擦防晒霜
-					</td>
-				</tr>
-				<tr>
-					<td class="s-pic3"><img class="a-pic3" src="/resources/images/living.png" alt="紫外线" /></td>
-					<td class="s-info3">
-						紫外线强度：<strong class="green">中等</strong><br />建议：除戴防护帽和太阳镜外涂擦防晒霜
-					</td>
-				</tr>
-				<tr class="odd">
-					<td class="s-pic3"><img class="a-pic3" src="/resources/images/living.png" alt="紫外线" /></td>
-					<td class="s-info3">
-						紫外线强度：<strong class="green">中等</strong><br />建议：除戴防护帽和太阳镜外涂擦防晒霜
-					</td>
-				</tr>
-				<tr>
-					<td class="s-pic3"><img class="a-pic3" src="/resources/images/living.png" alt="紫外线" /></td>
-					<td class="s-info3">
-						紫外线强度：<strong class="green">中等</strong><br />建议：除戴防护帽和太阳镜外涂擦防晒霜
-					</td>
-				</tr>
-				<tr class="odd">
-					<td class="s-pic3"><img class="a-pic3" src="/resources/images/living.png" alt="紫外线" /></td>
-					<td class="s-info3">
-						紫外线强度：<strong class="green">中等</strong><br />建议：除戴防护帽和太阳镜外涂擦防晒霜
-					</td>
-				</tr>											
+  <?php } ?>
 			</tbody>
 		</table>
 	</div><!-- content -->
