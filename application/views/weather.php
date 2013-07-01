@@ -20,12 +20,12 @@
 									<img class="a-pic2" src="resources/images/forecast.png" alt="晴" />
 								</td>
 								<td class="s-info2">
-									温度：25℃<br />
-									雨量：19.1mm<br />
-									风向：西南风<br />
-									风速：3m/s<br />
-									气压：XXmpa<br />
-									湿度：XX%<br />
+                  温度：<?php echo $weather[0]->temp; ?>℃<br />
+									雨量：<?php echo $weather[0]->rain; ?>mm<br />
+									风向：<?php echo $weather[0]->windd; ?><br />
+									风速：<?php echo $weather[0]->temp; ?>m/s<br />
+									气压：<?php echo $weather[0]->press; ?>mpa<br />
+									湿度：<?php echo $weather[0]->humidity; ?>%<br />
 								</td>
 							</tr>
 						</table>
@@ -38,7 +38,15 @@
 	<div class="mod">
 		<div class="title2">其他城市</div>
 		<div class="cont link-city">
-			<a href="#">贵阳市</a><a href="#">遵义市</a><a href="#">安顺市</a><a href="#">六盘水市</a><a href="#">毕节市</a><a href="#">铜仁市</a><a href="#">凯里市</a><a href="#">都匀市</a><a href="#">兴义市</a>                        
+      <a href="http://localhost/weather?citycode=57816">贵阳市</a>
+      <a href="http://localhost/weather?citycode=57713">遵义市</a>
+      <a href="http://localhost/weather?citycode=57806">安顺市</a>
+      <a href="http://localhost/weather?citycode=56693">六盘水市</a>
+      <a href="http://localhost/weather?citycode=57707">毕节市</a>
+      <a href="http://localhost/weather?citycode=57741">铜仁市</a>
+      <a href="http://localhost/weather?citycode=57825">凯里市</a>
+      <a href="http://localhost/weather?citycode=57827">都匀市</a>
+      <a href="http://localhost/weather?citycode=57907">兴义市</a>
 		</div>
 	</div>
 
