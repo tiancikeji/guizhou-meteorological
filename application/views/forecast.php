@@ -1,15 +1,15 @@
 
   <?php $this->load->view('_header');?>  
 	<div class="search">
-		<form action="">
-			<input name="keyword" type="text" id="keyword" class="s-hot" size="10" value="贵阳" />
+		<form action="/forecast" method="get">
+			<input name="city" type="text" id="keyword" class="s-hot" size="10" value="<?php echo $city; ?>" />
 			<input type="submit" value="搜索" />
 		</form>
 	</div><!-- search -->
 <?php 
     foreach($three_days as $value){
     ?>
-	<div class="title">贵阳市 未来三天天气预报</div>
+	<div class="title"><?php echo $city; ?>市 未来三天天气预报</div>
 	<div class="forecast-list">
 		<table class="table-list2">
 			<tbody>
@@ -69,14 +69,14 @@
 	</div><!-- list -->
 
       <?php } ?>
-	<div class="title">贵阳 逐6小时精细化预报</div>
+	<div class="title"><?php echo $city; ?>市 逐6小时精细化预报</div>
 	<div class="forecast-list">
 		<table class="table-list2">
 			<tbody>
      <?php foreach($six_hours as $value){ ?>
 				<tr>
 					<td colspan="2">
-						<div class="forecast-time"><?php echo $value->time; ?>-<?php echo date('Y-m-d H:i:s', $value->publish_time); ?></div>
+						<div class="forecast-time"><?php echo date('Y-m-d H:i:s', $value->publish_time); ?></div>
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
@@ -107,7 +107,15 @@
 	<div class="mod">
 		<div class="title2">其他城市</div>
 		<div class="cont link-city">
-			<a href="#">贵阳市</a><a href="#">遵义市</a><a href="#">安顺市</a><a href="#">六盘水市</a><a href="#">毕节市</a><a href="#">铜仁市</a><a href="#">凯里市</a><a href="#">都匀市</a><a href="#">兴义市</a>                        
+			<a href="/forecast?city=贵阳">贵阳市</a>
+      <a href="/forecast?city=遵义">遵义市</a>
+      <a href="/forecast?city=安顺">安顺市</a>
+      <a href="/forecast?city=六盘水">六盘水市</a>
+      <a href="/forecast?city=毕节">毕节市</a>
+      <a href="/forecast?city=铜仁">铜仁市</a>
+      <a href="/forecast?city=凯里">凯里市</a>
+      <a href="/forecast?city=都匀">都匀市</a>
+      <a href="/forecast?city=兴义">兴义市</a>                        
 		</div>
 	</div>
 

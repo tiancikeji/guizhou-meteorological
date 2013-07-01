@@ -3,7 +3,7 @@
 	<div class="title"><?php echo $trend[0]->title; ?></div>
 	<div class="news-details">
 		<div class="news-details-title"><?php echo $trend[0]->title; ?></div>
-    <div class="news-author"><span>发布时间：<?php echo $trend[0]->excute_time; ?></span></div>
+    <div class="news-author"><span>发布时间：<?php echo date('Y-m-d H:i:s', $trend[0]->excute_time); ?></span></div>
 		<div class="news-wrap">
     <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" >
       <param name="movie" value="<?php echo "http://www.gzqx.gov.cn".$trend[0]->body; ?>" />

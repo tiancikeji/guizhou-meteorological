@@ -10,5 +10,11 @@ class Weather_Model extends CI_Model {
        return $query->result();
     }
 
+    function get_city_name($citycode)
+    {
+      $query = $this->db->query("select stationname from gzqx_weather_stations where stationcode= ".$citycode);
+      return $query->result();
+    }
+
 }
 
