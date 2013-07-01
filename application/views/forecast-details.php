@@ -14,7 +14,7 @@
       <param name="expressinstall" value="http://www.gzqx.gov.cn/templets/gzqx/Scripts/expressInstall.swf" />
       <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 --> 
       <!--[if !IE]>-->
-      <object type="application/x-shockwave-flash" data="<?php echo "http://www.gzqx.gov.cn".$trend[0]->body; ?>" width="970" height="176">
+      <object type="application/x-shockwave-flash" data="<?php echo "http://www.gzqx.gov.cn".$trend[0]->body; ?>" width="100%" height="800">
         <!--<![endif]-->
         <param name="quality" value="high" /> 
         <param name="wmode" value="transparent" />

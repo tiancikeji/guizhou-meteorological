@@ -9,7 +9,9 @@ class News_Model extends CI_Model {
 
     function find_by_id($id)
     {
-         
+        $this->db->where("id",$id);
+        $query = $this->db->get('gzqx_archives');
+        return $query->result();
     }
 
 }

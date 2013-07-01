@@ -25,7 +25,11 @@ class News extends CI_Controller {
 	}
   public function details()
   {
-    $this->load->view('news-details');
+
+    $this->load->model('News_Model');
+    $id = $this->input->get("id");
+    $data['query'] = $this->News_Model->find_by_id($id);
+    $this->load->view('news-details',$data);
   }
 }
 
