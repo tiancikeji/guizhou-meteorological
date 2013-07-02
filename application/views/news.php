@@ -6,7 +6,7 @@
 <?php foreach($query as $value){
 ?>
         <tr>
-          <td class="s-pic"><a href="/news/details?id=<?php echo $value->id;?>"><img class="a-pic" src="<?php echo $value->litpic;  ?>" alt="图片" /></a></td>
+          <td class="s-pic"><a href="/news/details?id=<?php echo $value->id;?>"><img class="a-pic" src="http://www.gzqx.gov.cn/<?php echo $value->litpic;  ?>" alt="图片" /></a></td>
           <td class="s-info">
             <div class="news-title">
                 <a href="/news/details?id=<?php echo $value->id;?>"><?php echo $value->title; ?></a>
