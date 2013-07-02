@@ -19,7 +19,7 @@
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
-									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
+									<img class="a-pic2" src="/resources/images/<?php echo $value->weather1; ?>.png" />
 								</td>
 								<td class="s-info2">
 									<?php echo $value->weather1; ?><br />
@@ -36,7 +36,7 @@
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
-									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
+									<img class="a-pic2" src="resources/images/<?php echo $value->weather2; ?>.png" />
 								</td>
 								<td class="s-info2">
 									<?php echo $value->weather2; ?><br />
@@ -53,7 +53,7 @@
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
-									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
+									<img class="a-pic2" src="resources/images/<?php echo $value->weather3; ?>.png" />
 								</td>
 								<td class="s-info2">
 									<?php echo $value->weather3; ?><br />
@@ -80,7 +80,7 @@
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
-									<!-- <img class="a-pic2" src="resources/images/forecast.png" alt="晴" /> -->
+									<img class="a-pic2" src="resources/images/<?php echo  $value->phenomena; ?>.png" />
 								</td>
 								<td class="s-info2">
 								  <?php echo  $value->phenomena; ?><br />
