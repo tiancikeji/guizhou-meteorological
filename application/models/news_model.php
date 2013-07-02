@@ -3,14 +3,13 @@ class News_Model extends CI_Model {
 
     function get_last_ten_entries()
     {
-        $query = $this->db->get('gzqx_archives', 10);
+        $query = $this->db->query("SELECT arc.id,arc.title,arc.pubdate,arc.litpic,addon.body FROM gzqx_archives arc LEFT JOIN gzqx_addonarticle addon ON arc.id = addon.aid WHERE arc.typeid = '13' AND arc.litpic <>'' ORDER BY arc.pubdate DESC LIMIT 10");
         return $query->result();
     }
 
     function find_by_id($id)
     {
-        $this->db->where("id",$id);
-        $query = $this->db->get('gzqx_archives');
+        $query = $this->db->query("SELECT arc.id,arc.title,arc.pubdate,arc.litpic,addon.body FROM gzqx_archives arc LEFT JOIN gzqx_addonarticle addon ON arc.id = addon.aid WHERE arc.id = '".$id."' LIMIT 1");
         return $query->result();
     }
 
