@@ -39,15 +39,9 @@
 	<div class="mod">
 		<div class="title2">其他城市</div>
 		<div class="cont link-city">
-      <a href="http://localhost/weather?citycode=57816">贵阳市</a>
-      <a href="http://localhost/weather?citycode=57713">遵义市</a>
-      <a href="http://localhost/weather?citycode=57806">安顺市</a>
-      <a href="http://localhost/weather?citycode=56693">六盘水市</a>
-      <a href="http://localhost/weather?citycode=57707">毕节市</a>
-      <a href="http://localhost/weather?citycode=57741">铜仁市</a>
-      <a href="http://localhost/weather?citycode=57825">凯里市</a>
-      <a href="http://localhost/weather?citycode=57827">都匀市</a>
-      <a href="http://localhost/weather?citycode=57907">兴义市</a>
+     <?php foreach($stations as $value){ ?>
+      <a href="/weather?citycode=<?php echo $value->stationcode;?>"><?php echo $value->stationname;?></a>
+     <?php }?>
 		</div>
 	</div>
 

@@ -20,11 +20,12 @@ class Weather extends CI_Controller {
 	public function index()
 	{
     $this->load->model('Weather_Model');
+    $this->load->model("Forcast_Model");
     $citycode = $this->input->get('citycode');// "57816";
     $data['citycode'] = $citycode ;
     $data['cityname'] = $this->Weather_Model->get_city_name($citycode);
     $data['weather'] = $this->Weather_Model->get_current($citycode);
-
+    $data['stations'] = $this->Forcast_Model->get_all_stations();
 		$this->load->view('weather.php',$data);
 	}
 }

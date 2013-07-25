@@ -107,15 +107,10 @@
 	<div class="mod">
 		<div class="title2">其他城市</div>
 		<div class="cont link-city">
-			<a href="/forecast?city=贵阳">贵阳市</a>
-      <a href="/forecast?city=遵义">遵义市</a>
-      <a href="/forecast?city=安顺">安顺市</a>
-      <a href="/forecast?city=六盘水">六盘水市</a>
-      <a href="/forecast?city=毕节">毕节市</a>
-      <a href="/forecast?city=铜仁">铜仁市</a>
-      <a href="/forecast?city=凯里">凯里市</a>
-      <a href="/forecast?city=都匀">都匀市</a>
-      <a href="/forecast?city=兴义">兴义市</a>                        
+      
+     <?php foreach($stations as $value){ ?>
+     <a href="/forecast?city=<?php echo $value->stationname;?>"><?php echo $value->stationname;?></a>
+     <?php }?>
 		</div>
 	</div>
 

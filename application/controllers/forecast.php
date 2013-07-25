@@ -27,6 +27,7 @@ class Forecast extends CI_Controller {
     $data['city'] = $city; 
     $data['three_days'] = $this->Forcast_Model->get_three_days($city);
     $data['six_hours'] = $this->Forcast_Model->get_six_hours();
+    $data['stations'] = $this->Forcast_Model->get_all_stations();
 		$this->load->view('forecast',$data);
 	}
 

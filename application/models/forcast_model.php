@@ -8,6 +8,11 @@ class Forcast_Model extends CI_Model {
         return $query->result();
     }
 
+    function get_all_stations(){
+      $query = $this->db->get('gzqx_weather_stations');
+      return $query->result();
+    }
+
     function get_six_hours()
     {
         $query = $this->db->query('SELECT * FROM (
