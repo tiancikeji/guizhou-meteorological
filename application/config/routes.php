@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "alarm";
+$route['default_controller'] = "forecast";
 $route['404_override'] = '';
 
 
