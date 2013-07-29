@@ -9,7 +9,7 @@
 <?php 
     foreach($three_days as $value){
     ?>
-	<div class="title"><?php echo $city; ?>市 未来三天天气预报</div>
+	<div class="title"><?php echo $city; ?> 未来三天天气预报</div>
 	<div class="forecast-list">
 		<table class="table-list2">
 			<tbody>
@@ -32,7 +32,7 @@
 				</tr>
 				<tr class="odd">
 					<td colspan="2">
-						<div class="forecast-time"><?php echo date('Y-m-d',$value->fcdate); ?></div>
+						<div class="forecast-time"><?php echo date('Y-m-d',$value->fcdate+86400); ?></div>
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
@@ -49,7 +49,7 @@
 				</tr>
 				<tr>
 					<td colspan="2">
-						<div class="forecast-time"><?php echo date('Y-m-d',$value->fcdate); ?></div>
+						<div class="forecast-time"><?php echo date('Y-m-d',$value->fcdate+172800); ?></div>
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
@@ -69,7 +69,7 @@
 	</div><!-- list -->
 
       <?php } ?>
-	<div class="title"><?php echo $city; ?>市 逐6小时精细化预报</div>
+	<div class="title"><?php echo $city; ?> 逐6小时精细化预报</div>
 	<div class="forecast-list">
 		<table class="table-list2">
 			<tbody>
