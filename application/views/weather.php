@@ -23,8 +23,8 @@
 								<td class="s-info2">
                   温度：<?php echo $weather[0]->temp; ?>℃<br />
 									雨量：<?php echo $weather[0]->rain; ?>mm<br />
-									风向：<?php echo $weather[0]->windv; ?><br />
-									风速：<?php echo $weather[0]->temp; ?>m/s<br />
+									风向：<?php echo $windDirect; ?><br />
+									风速：<?php echo $weather[0]->windv; ?>m/s<br />
 									气压：<?php echo $weather[0]->press; ?>mpa<br />
 									湿度：<?php echo $weather[0]->humidity; ?>%<br />
 								</td>

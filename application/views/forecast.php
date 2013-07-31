@@ -76,7 +76,7 @@
      <?php foreach($six_hours as $value){ ?>
 				<tr>
 					<td colspan="2">
-						<div class="forecast-time"><?php echo date('Y-m-d H:i:s', $value->publish_time); ?></div>
+						<div class="forecast-time"><?php echo date('Y-m-d H:i:s', $value->time); ?></div>
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">

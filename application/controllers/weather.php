@@ -26,6 +26,7 @@ class Weather extends CI_Controller {
     $data['cityname'] = $this->Weather_Model->get_city_name($citycode);
     $data['weather'] = $this->Weather_Model->get_current($citycode);
     $data['stations'] = $this->Forcast_Model->get_all_stations();
+    $data['windDirect'] = $this->Weather_Model->windDirect($data['weather'][0]->windv);
 		$this->load->view('weather.php',$data);
 	}
 }
