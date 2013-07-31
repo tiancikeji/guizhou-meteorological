@@ -3,8 +3,8 @@ class Forcast_Model extends CI_Model {
 
     function get_three_days($city)
     {
-        $this->db->where('city', $city);
-        $query = $this->db->get('gzqx_city_forcast');
+        $this->db->where('county', $city);
+        $query = $this->db->get('gzqx_county_forcast');
         return $query->result();
     }
 
