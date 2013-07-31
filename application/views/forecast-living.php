@@ -4,14 +4,16 @@
   <div class="living content">
     <table class="table-list">
       <tbody>
-  <?php foreach($living as $value){?>
+        <?php foreach($living as $value){?>
         <tr>
           <td class="s-pic3"><img class="a-pic3" src="/resources/images/living.png" alt="紫外线" /></td>
           <td class="s-info3">
-              <?php echo $value->live_name; ?>强度：<strong class="green"><?php echo $value->index_description; ?></strong><br />建议：<?php echo $value->description; ?>
+              <?php echo $value[0]->live_name; ?>
+              强度：<strong class="green"><?php echo $value[0]->index_description; ?></strong><br />
+              建议：<?php echo $value[0]->description; ?>
           </td>
         </tr>
-  <?php } ?>
+      <?php } ?>
       </tbody>
     </table>
   </div><!-- content -->
