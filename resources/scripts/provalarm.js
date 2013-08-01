@@ -13,7 +13,7 @@ var attrs=getScriptArgs();
 var alarmareaid = attrs.areaid == undefined?'10101':attrs.areaid;
 var alarmtype = attrs.alarmtype == undefined?'[0-9]{2}':attrs.alarmtype;
 var alarmlevel = attrs.alarmlevel == undefined?'[0-9]{2}':attrs.alarmlevel;
-var alarmcount = attrs.count == undefined?'4':attrs.count;
+var alarmcount = attrs.count == undefined?'100':attrs.count;
 var alarmdivid = attrs.divid == undefined?'alarm-'+new Date().getTime():'alarm-'+attrs.divid;
 document.write("<div class=\"alarm\" id="+alarmdivid+"></div>");
           $provid=alarmareaid.substr(3,2);
@@ -35,7 +35,7 @@ $.ajax({
 		$appparent=$('#'+alarmdivid);
 		$html = '';
 
-		$('<h1>气象灾害警报与预警信号<br><span><a target="_blank" href="http://www.weather.com.cn/alarm/newalarmlist.shtml?prov='+alarmareaid+'&level=3">'+$provname+'预警中'+alarminfo.count+'个</a></span></h1>').appendTo($appparent);
+		$('<h1><span>'+$provname+'预警中'+alarminfo.count+'个</span></h1>').appendTo($appparent);
 		if(alarminfo.count==0){
 			$('<div style="text-align:center; font-size:20px; margin-top:60px;">无预警信息</div>').appendTo($appparent);	
 			$('#d_table').html('<center style="margin-top:200px"><h3>无预警信息</h3></center>'); 
@@ -80,7 +80,7 @@ $.ajax({
 		   }			
 		});
 		
-		$($appparent).append('<div class="signal_way"><a href="/forecast/alarm/2012/1220/127.html" target="blank">预警信号及防御指南>></a></div>');
+		$($appparent).append('<div class="signal_way"><a href="/alarminfo">预警信号及防御指南>></a></div>');
 		//$('#d_table').html($html);
 		
 	}

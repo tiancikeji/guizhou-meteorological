@@ -69,6 +69,7 @@
 	</div><!-- list -->
 
       <?php } ?>
+  <?php if ($city==="贵阳"){ ?>
 	<div class="title"><?php echo $city; ?> 逐6小时精细化预报</div>
 	<div class="forecast-list">
 		<table class="table-list2">
@@ -76,7 +77,24 @@
      <?php foreach($six_hours as $value){ ?>
 				<tr>
 					<td colspan="2">
-						<div class="forecast-time"><?php echo date('Y-m-d H:i:s', $value->time); ?></div>
+						<div class="forecast-time">
+						<?php 							
+							$year=substr($value->time,0,4);
+							$month=substr($value->time,4,2);
+							$day=substr($value->time,6,2);
+							$hour=substr($value->time,8,2);
+							$time=mktime(8+substr($value->time,8,2),0,0,substr($value->time,4,2),substr($value->time,6,2),substr($value->time,0,4));
+    						if($hour<"12" && $hour>="0"){
+								$starttime = mktime((2+$value->period),0,0,$month,$day,$year);
+								$endtime = $starttime + 6*3600;
+								echo date("d",$starttime)."日".date("H:",$starttime)."00 ~ " . date("d",$endtime)."日".date("H:",$endtime)."00";
+							}else{
+    							$starttime = mktime((14+$value->period),0,0,$month,$day,$year);
+								$endtime = $starttime + 6*3600;
+								echo date("d",$starttime)."日".date("H:",$starttime)."00 ~ " . date("d",$endtime)."日".date("H:",$endtime)."00";
+							}
+						 ?>
+                        </div>
 						<table class="table-list">
 							<tr>
 								<td class="s-pic2">
@@ -95,6 +113,7 @@
 			</tbody>
 		</table>
 	</div><!-- list -->
+<?php } ?>
 
 	<div class="title">天气趋势</div>
 	<div class="alist">
@@ -113,5 +132,4 @@
      <?php }?>
 		</div>
 	</div>
-
   <?php $this->load->view('_footer');?>  
