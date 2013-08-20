@@ -173,6 +173,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 	text-align: left;
 	padding: 10px 10px 10px 0;
 }
+.alarm dl dt {
+  float:left;
+}
 .alarm-details .s-pic {
 	padding-right: 10px;
 }
@@ -227,6 +230,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* details */
 
 .footer {
+  font-size:12px;
 	background: #1C5089;
 	text-align: center; 
 	color: #fff;

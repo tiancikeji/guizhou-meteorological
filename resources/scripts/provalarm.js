@@ -15,7 +15,7 @@ var alarmtype = attrs.alarmtype == undefined?'[0-9]{2}':attrs.alarmtype;
 var alarmlevel = attrs.alarmlevel == undefined?'[0-9]{2}':attrs.alarmlevel;
 var alarmcount = attrs.count == undefined?'100':attrs.count;
 var alarmdivid = attrs.divid == undefined?'alarm-'+new Date().getTime():'alarm-'+attrs.divid;
-document.write("<div class=\"alarm\" id="+alarmdivid+"></div>");
+document.write("<div class=\"alarm\"  id="+alarmdivid+" ></div>");
           $provid=alarmareaid.substr(3,2);
           $provnamearr=['北京','上海','天津','重庆','黑龙江','吉林','辽宁','内蒙古','河北','山西','陕西','山东','新疆','西藏','青海','甘肃','宁夏','河南','江苏','湖北','浙江','安徽','福建','江西','湖南','贵州','四川','广东','云南','广西','海南','香港','澳门','台湾'];
 	 $provname=$provnamearr[parseInt($provid,10)-1];
@@ -57,7 +57,7 @@ $.ajax({
 			if ($lb >90) $textlb=$gdlb[parseInt($lb,10) - 91 ];
 			if ($jb  >90) $textyc=$gdyc[parseInt($jb,10) - 91 ];
 			
-			$('<dl><dt><a target="_blank" href="http://www.weather.com.cn/alarm/newalarmcontent.shtml?file='+$filename+'"><img src="http://www.weather.com.cn/m2/i/alarm_s/'+$img+'.gif"></a></dt><dd><h2><a target="_blank" href="http://www.weather.com.cn/alarm/newalarmcontent.shtml?file='+$filename+'">'+k[0]+'气象台发布'+$textlb+$textyc+'预警</a></h2>状态：<b>预警中</b><a target="_blank" class="detail" href="http://www.weather.com.cn/alarm/newalarmcontent.shtml?file='+$filename+'">详情</a></dd></dl>').appendTo($appparent);
+			$('<dl><dt><a target="_blank" href="http://www.weather.com.cn/alarm/newalarmcontent.shtml?file='+$filename+'"><img style="width:60px;height:50px;" src="http://www.weather.com.cn/m2/i/alarm_s/'+$img+'.gif"></a></dt><dd><h2><a target="_blank" href="http://www.weather.com.cn/alarm/newalarmcontent.shtml?file='+$filename+'">'+k[0]+'气象台发布'+$textlb+$textyc+'预警</a></h2>状态：<b>预警中</b></dd></dl>').appendTo($appparent);
 			
 			if ($typeid != '0000')
 		    {
@@ -69,7 +69,6 @@ $.ajax({
 					async:false,
 					success:function(){
 					  if (typeof (alarmfyzn) != 'undefined') {		
-					  				
 								$html +='<tr><td valign="top" height="73" bgcolor="#dfe8f9"><table height="96" cellspacing="6" cellpadding="0" bgcolor="#dfe8f9" width="100%"><tbody><tr><td valign="top" align="center"><img height="43" width="50" id="alarmimg" src="http://www.weather.com.cn/m2/i/about/alarmpic/'+$img+'.gif"/></td></tr></tbody></table></td>';
 								$html +='<td valign="top" bgcolor="#dfe8f9"><table height="96" cellspacing="6" cellpadding="0" bgcolor="#dfe8f9" width="100%"><tbody><tr><td valign="top" class="alarm-cn" id="alarmbz">'+alarmfyzn[2]+'</td></tr></tbody></table></td>';
 								$html +='<td valign="top" bgcolor="#dfe8f9"><table height="96" cellspacing="6" cellpadding="0" bgcolor="#dfe8f9" width="100%"><tbody><tr><td valign="top" id="alarmzn" class="alarm-cn">'+alarmfyzn[3]+'</td></tr></tbody></table></td></tr>';
