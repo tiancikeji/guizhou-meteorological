@@ -126,10 +126,13 @@
 	<div class="mod">
 		<div class="title2">其他城市</div>
 		<div class="cont link-city">
-      
-     <?php foreach($stations as $value){ ?>
-     <a href="/forecast?city=<?php echo $value->stationname;?>"><?php echo $value->stationname;?></a>
+   <?php for($i=1; $i < sizeof($stations) ;$i++){ ?>
+     <a href="/forecast?city=<?php echo $stations[$i]->stationname;?>"><?php echo $stations[$i]->stationname;?></a>
+        <?php if(isset($stations[$i+1]) and $stations[$i+1]->areacode != $stations[$i]->areacode ){
+        ?><br/>
+        <?php } ?>
      <?php }?>
+
 		</div>
 	</div>
   <?php $this->load->view('_footer');?>  
